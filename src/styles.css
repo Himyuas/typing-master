@@ -1,0 +1,91 @@
+.App {
+  font-family: sans-serif;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  height: 100vh;
+}
+
+h1 {
+  color: purple;
+}
+
+.stContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.popup {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  box-shadow: 10px 5px 5px grey;
+  border: 1px solid black;
+  background: black;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.stContainer h3 {
+  color: purple;
+}
+
+.editArea {
+  position: relative;
+}
+
+.editArea input {
+  font-size: 16px;
+  color: rgb(247, 246, 246);
+  border: 2px solid purple;
+  border-radius: 5px;
+  caret-shape: block;
+  padding: 10px;
+  width: 500px;
+  background: none;
+  height: 250px;
+  width: calc(100vw - 90px);
+}
+
+.editArea input:focus {
+  outline: none;
+  border: none;
+  box-shadow: -10px -10px 10px #6359f8, 0px -10px 10px 0px #9c32e2,
+    10px -10px 10px #f36896, 10px 0 10px #ff0b0b, 10px 10px 10px 0px#ff5500,
+    0 10px 10px 0px #ff9500, -10px 10px 10px 0px #ffb700;
+  animation: ease-in 0.7s linear infinite;
+}
+
+.editArea .background {
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 16px;
+  color: grey;
+  width: calc(100vw - 90px);
+  line-height: 1.5;
+}
+
+.cursor {
+  animation: cursor-blink 1.5s infinite;
+}
+
+@keyframes cursor-blink {
+  0% {
+    border-bottom: 3px solid purple;
+  }
+  50% {
+    border-bottom: 3px solid rgb(247, 246, 246);
+  }
+  100% {
+    border-bottom: 3px solid purple;
+  }
+}
